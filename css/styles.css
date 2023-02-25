@@ -325,7 +325,13 @@ width: 264px;
    margin: 0 0 72px 0;
 }
 .card {
+   display: block;
    text-decoration: none;
+}
+.card:hover, .card:focus {
+   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .portfolio-button {
    padding: 12px 24px ;
@@ -370,18 +376,14 @@ margin:0;
 padding: 0;
 list-style-type: none;
 }
-.li-card:hover {
-   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-   0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-   0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
 .img-portfolio {
    /*outline:  1px solid tomato;*/
 }
-.name-project {
+
+.name-project{
    margin: 0;
    padding: 0;
-color: var(--color-navyblue);
+   color: var(--color-navyblue);
    font-size: 20px;
    font-weight: 500;
    line-height: 1.2;
@@ -437,6 +439,7 @@ color: var(--color-navyblue);
 
 .customers-link:hover, .customers-link:focus {
   border-color: var(--color-ocean);
+fill: var(--color-ocean);
 }
 .customers-image:hover {
    fill: var(--color-ocean);
@@ -445,17 +448,16 @@ color: var(--color-navyblue);
 .customers-link {
    display: flex;
    align-items: center;
-      width: 100%;
-      height: 100%;
-      padding: 16px 32px;
-      border: 1px solid var(--color-lightslate);
-      border-radius: 4%;
+   width: 100%;
+   height: 100%;
+   padding: 16px 32px;
+   border: 1px solid var(--color-lightslate);
+   border-radius: 4%;
+   fill: var(--color-lightslate);
 }
 .customers-image {
-   display: block;
    width: 104px;
    height: 56px;
-   fill: var(--color-lightslate);
 }
 .footer-socialtext{
    font-size: 16px;
